@@ -1,0 +1,58 @@
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1.4rem 1.3rem 0.7rem;
+  gap: 1.2rem;
+  background: #fafcff;
+  border-radius: 10px;
+  min-height: 370px;
+  box-shadow: 0 0 3px 0 rgba(60,60,60,.035);
+  max-width: 540px;
+  box-sizing: border-box;
+}
+
+.note-title {
+  font-size: 1.22rem;
+  border: none;
+  border-bottom: 2px solid #d6e8fa;
+  padding: 0.5rem 0.3rem;
+  background: transparent;
+  color: #1976d2;
+  font-weight: 600;
+  outline: none;
+  transition: border .18s;
+}
+
+.note-title:focus {
+  border-color: #1976d2;
+}
+
+.note-content {
+  width: 100%;
+  min-height: 170px;
+  border: 1.1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  padding: 0.7rem 0.8rem;
+  outline: none;
+  color: #424242;
+  resize: vertical;
+  background: #fff;
+}
+
+.save-btn {
+  margin-top: 0.1rem;
+  background: #1976d2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 18px;
+  padding: 0.55rem 2.1rem;
+  align-self: end;
+  cursor: pointer;
+  transition: background .16s;
+}
+.save-btn:hover {
+  background: #115293;
+}

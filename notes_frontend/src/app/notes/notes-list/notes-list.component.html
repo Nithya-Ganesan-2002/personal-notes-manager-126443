@@ -1,0 +1,13 @@
+<ul class="notes-list">
+  <li *ngFor="let note of notes"
+      (click)="onSelectNote(note.id)"
+      [class.selected]="note.id === selectedNoteId">
+    <span class="note-title">{{ note.title || 'Untitled' }}</span>
+    <button class="delete-btn"
+            (click)="onDeleteNote(note.id, $event)"
+            aria-label="Delete Note">&times;</button>
+  </li>
+  <li *ngIf="!notes.length" class="empty-msg">
+    No notes found.
+  </li>
+</ul>
