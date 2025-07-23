@@ -1,0 +1,35 @@
+.sidebar {
+  background: #fff;
+  min-width: 210px;
+  max-width: 260px;
+  border-right: 1px solid #e0e0e0;
+  height: 100vh;
+  padding: 2rem 1rem 1rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  margin: 0 0 2rem;
+  color: #1976d2;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.create-btn {
+  background: #ffb300;
+  color: #212121;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.4rem;
+  transition: background .18s;
+}
+.create-btn:hover {
+  background: #ffd149;
+}

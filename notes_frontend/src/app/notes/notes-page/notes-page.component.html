@@ -1,0 +1,22 @@
+<div class="container">
+  <app-sidebar (createNew)="onCreateNewNote()"></app-sidebar>
+  <main class="notes-main">
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    <section class="content-layout">
+      <section class="notes-list-pane">
+        <app-notes-list
+          [notes]="filteredNotes"
+          [selectedNoteId]="selectedNoteId"
+          (selectNote)="onSelectNote($event)"
+          (deleteNote)="onDeleteNote($event)">
+        </app-notes-list>
+      </section>
+      <section class="editor-pane">
+        <app-note-editor
+          [note]="selectedNote"
+          (save)="onSaveNote($event)">
+        </app-note-editor>
+      </section>
+    </section>
+  </main>
+</div>

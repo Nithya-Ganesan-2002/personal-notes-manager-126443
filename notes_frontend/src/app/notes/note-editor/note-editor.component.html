@@ -1,0 +1,19 @@
+<div class="editor-container">
+  <input
+    type="text"
+    class="note-title"
+    [(ngModel)]="localTitle"
+    [placeholder]="note ? 'Title' : 'New note title...'"
+    maxlength="80"
+    autocomplete="off"
+  />
+
+  <textarea
+    class="note-content"
+    [(ngModel)]="localContent"
+    [placeholder]="note ? 'Start typing your note...' : 'Write a new note here...'"
+    rows="12"
+  ></textarea>
+
+  <button class="save-btn" (click)="onSave()">Save</button>
+</div>

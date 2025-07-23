@@ -1,0 +1,48 @@
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 64vh;
+  overflow-y: auto;
+}
+
+.notes-list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.6rem 1rem 0.6rem 0.2rem;
+  border-radius: 12px;
+  margin-bottom: 0.2rem;
+  transition: background 0.13s;
+  border: 1px solid transparent;
+}
+
+.notes-list li.selected {
+  background: #e3f2fd;
+  border-color: #1976d2;
+}
+
+.note-title {
+  flex: 1;
+  color: #424242;
+  font-size: 1.05rem;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ff5252;
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+.delete-btn:hover {
+  color: #d32f2f;
+}
+
+.empty-msg {
+  color: #bdbdbd;
+  text-align: center;
+  padding: 1.2rem 0;
+}
